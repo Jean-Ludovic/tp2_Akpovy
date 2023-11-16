@@ -1,4 +1,6 @@
+
 <?php
+require_once("config/function.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['num_addresses'])) {
         $_SESSION['num_addresses'] = (int)$_POST['num_addresses'];
